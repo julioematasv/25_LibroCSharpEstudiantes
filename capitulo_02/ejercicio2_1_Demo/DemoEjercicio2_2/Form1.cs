@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DemoEjercicio2_1
+namespace DemoEjercicio2_2
 {
     public partial class Form1 : Form
     {
@@ -19,23 +19,26 @@ namespace DemoEjercicio2_1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            label1.Text = "Si";
-            label2.Text = "Si";
-            label3.Text = "Si";
+            label1.Visible = true;
+            label1.Text = "Clic en boton 1";
+            label2.Visible = false;
+            label3.Visible = false;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            label1.Text = "No";
-            label2.Text = "No";
-            label3.Text = "No";
+            label1.Visible = false;
+            label2.Visible = true;
+            label2.Text = "Clic en boton 2";
+            label3.Visible = false;
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            label1.Text = "A";
-            label2.Text = "B";
-            label3.Text = "C";
+            label1.Visible = false;
+            label2.Visible = false;
+            label3.Visible = true;
+            label3.Text = "Clic en boton 3";
         }
     }
 }
